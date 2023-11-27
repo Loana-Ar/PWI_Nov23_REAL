@@ -1,0 +1,92 @@
+/*comentarios*/
+
+/*SELECTORES:
+selector{
+     propiedad: valor,
+     propiedad: valor,
+     propiedad: valor,
+}
+*/
+
+/* 1) Por etiqueta: escribo el nombre de la etiqueta. (Más simple) */
+
+h1{
+    background-color:rgb(0,150,55);
+    color:aliceblue;
+/*Height:80% no me lo aplica porque no tengo un valor definido fijo del alto del body*/
+    height: 20vh; /*el alto es el 80% del alto de la pantalla (browser) */
+}
+
+p{
+    color: azure;
+}
+
+
+button{
+    background-color: #345f4d;
+   
+    padding:30px;
+    /*
+    1valor -> aplica a todos los extremos*/
+    
+}
+
+/* 2) Por clase: Agrupa las etiquetas en grupos.
+Escribo un punto . y el nombre de la clase*/
+.texto{
+    color:darkturquoise;
+    background-color:rgba(23,45,89,0.6)
+}
+
+.subtitulo1{
+    height: 50px;
+}
+
+.tarjeta{
+    width: 600px;
+    background-color: peru;
+}
+
+/* 3) Por ID: escribo # (numeral) y a continuacion el nombre del id*/
+#botonParticular{
+    color: tomato;
+}
+
+#texto-tarjeta{
+    width: 50%;
+    background-color: rgb(131, 108, 108);
+}
+
+
+/* Algunas propiedades...
+   
+   Color: color de la tipografia
+   Backgorund-color: Color de fondo  de una etiqueta
+   Width: ancho de una etiqueta
+   Height: alto de una etiqueta
+
+   Modelo de la caja...
+
+   padding --> relleno de la etiqueta
+   border --> contorno/borde de la etiqueta
+   margin --> espacio entre etiquetas, margen de la etiqueta
+
+
+*/
+
+/* Para definir colores...
+colores primarios -> rojo, verde y azul
+
+  1) colores predefinidos por CSS
+  2) rgb: creo el tipo de color con (red, green, blue)
+  rgba: transparencia 0-1 (decimales 0.3 etc)
+  3) hexadecimal: par de digitos asignado para cantidad de rojo, verde y azul. Se escriben con un numeral adelante .A-F y 0.9 SON 6 DIGITOS.
+COLORHUNT.CO para copiar codigo de un color.
+*/
+
+/*Unidades de Medida...
+  
+  1)porcentaje -> %
+  2)view height-view width -> vh vw. Hace referencia a un porcentaje del tamaño de la pantalla.
+  3)pixeles -> px
+*/
