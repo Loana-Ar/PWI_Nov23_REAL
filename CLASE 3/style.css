@@ -8,34 +8,64 @@ selector{
 }
 */
 
+/*  Selector universal: aplica a TODAS las etiquetas de html*/
+ {
+    margin:0px;
+ }
+
+
+
 /* 1) Por etiqueta: escribo el nombre de la etiqueta. (Más simple) */
+
+body{
+     margin: 0px;
+     background-color:rgb(106, 228, 106);
+}
+
 
 h1{
     background-color:rgb(0,150,55);
     color:aliceblue;
 /*Height:80% no me lo aplica porque no tengo un valor definido fijo del alto del body*/
     height: 20vh; /*el alto es el 80% del alto de la pantalla (browser) */
+    margin: 0px;  /*le saco el margen que tiene. Funciona tambien para padding*/
 }
 
 p{
-    color: azure;
+    color: rgb(251, 253, 253);
+    margin: 80px 22px 30px 50px;
+    /*los valores funcionan como el padding. No a los rellenos sino a los bordes.*/
+    background-color:darkolivegreen;
 }
 
 
 button{
     background-color: #345f4d;
    
-    padding:30px;
-    /*
-    1valor -> aplica a todos los extremos*/
-    
+   /*1 valor de padding -> aplica relleno a todos los extremos
+    2 valores " " -> el primer valor se asigna de arriba y abajo y el segundo a los costados.
+    4  " " -> aplica a c/u de los extremos los  valores asignados iniciando por el superior y a continuacion en sentido horario */
+      padding: 22px, 56px, 35px, 30px;
+ 
+    /*padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 65px; */
+}
+
+/*Border:
+borde de todos los extremos; ancho de borde, el tipo, color*/
+a{
+    border-style:solid;
+    border-color: black;
+    border-radius: 30px;
 }
 
 /* 2) Por clase: Agrupa las etiquetas en grupos.
 Escribo un punto . y el nombre de la clase*/
 .texto{
-    color:darkturquoise;
-    background-color:rgba(23,45,89,0.6)
+    color:rgb(0, 8, 8);
+    background-color:rgba(16, 66, 21, 0.6)
 }
 
 .subtitulo1{
@@ -45,6 +75,8 @@ Escribo un punto . y el nombre de la clase*/
 .tarjeta{
     width: 600px;
     background-color: peru;
+    padding:50px;
+    box-sizing: border-box; /*defino si quiero que en el tamaño definido de la etiqueta integre o no el padding y el border*/
 }
 
 /* 3) Por ID: escribo # (numeral) y a continuacion el nombre del id*/
@@ -55,6 +87,11 @@ Escribo un punto . y el nombre de la clase*/
 #texto-tarjeta{
     width: 50%;
     background-color: rgb(131, 108, 108);
+}
+
+#resaltar{
+    background-color: chocolate;
+    color: antiquewhite;
 }
 
 
@@ -89,4 +126,9 @@ COLORHUNT.CO para copiar codigo de un color.
   1)porcentaje -> %
   2)view height-view width -> vh vw. Hace referencia a un porcentaje del tamaño de la pantalla.
   3)pixeles -> px
+*/
+
+/*Jerarquia:
+el selector mas especifico es el que prevalece
+id > class > selector por etiqueta
 */
