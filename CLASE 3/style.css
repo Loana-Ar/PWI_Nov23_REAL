@@ -59,13 +59,17 @@ a{
     border-style:solid;
     border-color: black;
     border-radius: 30px;
+    padding:5px;
+
 }
 
 /* 2) Por clase: Agrupa las etiquetas en grupos.
 Escribo un punto . y el nombre de la clase*/
 .texto{
     color:rgb(0, 8, 8);
-    background-color:rgba(16, 66, 21, 0.6)
+    background-color:rgba(16, 66, 21, 0.6);
+    margin-bottom: 20px;
+
 }
 
 .subtitulo1{
@@ -74,23 +78,23 @@ Escribo un punto . y el nombre de la clase*/
 
 .tarjeta{
     width: 600px;
-    background-color: peru;
+    background-color: rgb(116, 114, 114);
     padding:50px;
     box-sizing: border-box; /*defino si quiero que en el tamaño definido de la etiqueta integre o no el padding y el border*/
 }
 
 /* 3) Por ID: escribo # (numeral) y a continuacion el nombre del id*/
 #botonParticular{
-    color: tomato;
+    color: rgb(27, 27, 27);
 }
 
 #texto-tarjeta{
     width: 50%;
-    background-color: rgb(131, 108, 108);
+    background-color: rgb(248, 72, 72);
 }
 
 #resaltar{
-    background-color: chocolate;
+    background-color: rgb(13, 31, 11);
     color: antiquewhite;
 }
 
